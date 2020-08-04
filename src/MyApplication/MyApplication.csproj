@@ -55,10 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoolingType.cs" />
     <Compile Include="DietyRestrictions.cs" />
     <Compile Include="Facade\IMyFacade.cs" />
     <Compile Include="Plugins\IMyModulesPlugin.cs" />
-    <Compile Include="Capabilities\SomeCapabilities.cs" />
+    <Compile Include="Capabilities\CoolingCapabilities.cs" />
     <Compile Include="Products\FoodInstance.cs" />
     <Compile Include="Products\FoodType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
