@@ -1,9 +1,9 @@
 ﻿using System;
 using Moryx.Runtime.Modules;
-using MyApplication.Facade;
-using MyApplication.Module.Components;
+using FoodShareMory.Facade;
+using FoodShareMory.Module.Components;
 
-namespace MyApplication.Module.Facade
+namespace FoodShareMory.Module.Facade
 {
     public class MyFacade : IFacadeControl, IMyFacade
     {

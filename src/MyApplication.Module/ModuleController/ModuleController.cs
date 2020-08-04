@@ -1,11 +1,11 @@
 ﻿using Moryx.Runtime.Container;
 using Moryx.Runtime.Modules;
-using MyApplication.Facade;
-using MyApplication.Module.Components;
-using MyApplication.Module.Facade;
-using MyApplication.Plugins;
+using FoodShareMory.Facade;
+using FoodShareMory.Module.Components;
+using FoodShareMory.Module.Facade;
+using FoodShareMory.Plugins;
 
-namespace MyApplication.Module.ModuleController
+namespace FoodShareMory.Module.ModuleController
 {
     [ServerModule(ModuleName)]
     //public class ModuleController : ServerModuleBase<ModuleConfig> // No facade export

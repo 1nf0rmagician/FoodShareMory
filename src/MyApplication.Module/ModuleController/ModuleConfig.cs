@@ -3,9 +3,9 @@ using System.Runtime.Serialization;
 using Moryx.Configuration;
 using Moryx.Runtime.Configuration;
 using Moryx.Serialization;
-using MyApplication.Plugins;
+using FoodShareMory.Plugins;
 
-namespace MyApplication.Module.ModuleController
+namespace FoodShareMory.Module.ModuleController
 {
     [DataContract]
     public class ModuleConfig : ConfigBase

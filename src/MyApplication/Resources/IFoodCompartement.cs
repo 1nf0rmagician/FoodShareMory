@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Device.Location;
 
-namespace MyApplication.Resources
+namespace FoodShareMory.Resources
 {
     public interface IFoodCompartement : IPublicResource
     {

@@ -1,6 +1,6 @@
 ﻿using Moryx.AbstractionLayer.Capabilities;
 
-namespace MyApplication.Capabilities
+namespace FoodShareMory.Capabilities
 {
     /// <summary>
     /// Class that represents the cooling capabilities

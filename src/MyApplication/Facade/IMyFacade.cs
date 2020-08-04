@@ -1,4 +1,4 @@
-﻿namespace MyApplication.Facade
+﻿namespace FoodShareMory.Facade
 {
     public interface IMyFacade
     {
