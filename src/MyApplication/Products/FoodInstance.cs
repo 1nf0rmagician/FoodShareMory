@@ -2,7 +2,7 @@
 using System;
 using System.ComponentModel;
 
-namespace MyApplication.Products
+namespace FoodShareMory.Products
 {
     public class FoodInstance : ProductInstance<FoodType>
     {

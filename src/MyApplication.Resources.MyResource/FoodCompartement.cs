@@ -6,9 +6,9 @@ using System.Runtime.Serialization;
 using Moryx.AbstractionLayer;
 using Moryx.AbstractionLayer.Products;
 using Moryx.AbstractionLayer.Resources;
-using MyApplication.Capabilities;
+using FoodShareMory.Capabilities;
 
-namespace MyApplication.Resources.MyResource
+namespace FoodShareMory.Resources.MyResource
 {
     [ResourceRegistration] // Only necessary for dependency injection like logging or parallel operations
     public class FoodCompartement : PublicResource, IFoodCompartement

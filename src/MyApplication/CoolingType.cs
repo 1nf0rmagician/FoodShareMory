@@ -1,4 +1,4 @@
-﻿namespace MyApplication
+﻿namespace FoodShareMory
 {
     public enum CoolingType
     {

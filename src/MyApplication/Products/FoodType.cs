@@ -1,7 +1,7 @@
 ﻿using Moryx.AbstractionLayer.Products;
 using System.ComponentModel;
 
-namespace MyApplication.Products
+namespace FoodShareMory.Products
 {
     public class FoodType : ProductType
     {

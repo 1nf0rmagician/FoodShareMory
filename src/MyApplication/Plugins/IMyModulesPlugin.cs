@@ -1,6 +1,6 @@
 ﻿using Moryx.Modules;
 
-namespace MyApplication.Plugins
+namespace FoodShareMory.Plugins
 {
     public interface IMyModulesPlugin : IPlugin
     {

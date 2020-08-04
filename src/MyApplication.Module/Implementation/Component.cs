@@ -1,7 +1,7 @@
 ﻿using Moryx.Container;
-using MyApplication.Module.Components;
+using FoodShareMory.Module.Components;
 
-namespace MyApplication.Module.Implementation
+namespace FoodShareMory.Module.Implementation
 {
     [Component(LifeCycle.Singleton, typeof(IMyComponent))]
     public class Component : IMyComponent
