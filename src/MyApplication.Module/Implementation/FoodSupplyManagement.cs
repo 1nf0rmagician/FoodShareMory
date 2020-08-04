@@ -3,8 +3,8 @@ using FoodShareMory.Module.Components;
 
 namespace FoodShareMory.Module.Implementation
 {
-    [Component(LifeCycle.Singleton, typeof(IMyComponent))]
-    public class Component : IMyComponent
+    [Component(LifeCycle.Singleton, typeof(IFoodSupplyManagement))]
+    public class FoodSupplyManagement : IFoodSupplyManagement
     {
         public void Start()
         {

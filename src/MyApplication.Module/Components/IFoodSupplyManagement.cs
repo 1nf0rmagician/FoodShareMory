@@ -2,7 +2,7 @@
 
 namespace FoodShareMory.Module.Components
 {
-    public interface IMyComponent : IPlugin
+    public interface IFoodSupplyManagement : IPlugin
     {
     }
 }

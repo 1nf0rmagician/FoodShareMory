@@ -4,6 +4,8 @@ using FoodShareMory.Facade;
 using FoodShareMory.Module.Components;
 using FoodShareMory.Module.Facade;
 using FoodShareMory.Plugins;
+using Moryx.AbstractionLayer.Products;
+using Moryx.AbstractionLayer.Resources;
 
 namespace FoodShareMory.Module.ModuleController
 {
@@ -11,17 +13,20 @@ namespace FoodShareMory.Module.ModuleController
     //public class ModuleController : ServerModuleBase<ModuleConfig> // No facade export
     public class ModuleController : ServerModuleFacadeControllerBase<ModuleConfig>, IFacadeContainer<IMyFacade> // Facade export
     {
-        internal const string ModuleName = "MyModule";
+        internal const string ModuleName = "FoodSupplyManagement";
 
         public override string Name => ModuleName;
 
         // Import a data model
         //[Named(SomeConstants.Namespace)]
         //public IUnitOfWorkFactory MyModel { get; set; }
+        
+        [RequiredModuleApi(IsStartDependency = true, IsOptional = false)]
+        public IResourceManagement ResourceManagement { get; set; }
 
-        // Import a facade, e.g. IResourceManagement
-        //[RequiredModuleApi(IsStartDependency = true, IsOptional = false)]
-        //public IOtherFacade Dependency { get; set; }
+        [RequiredModuleApi(IsStartDependency = true, IsOptional = false)]
+        public IProductManagement ProductManagement { get; set; }
+
 
         #region State transition
 
@@ -46,7 +51,7 @@ namespace FoodShareMory.Module.ModuleController
         protected override void OnStart()
         {
             // Start component
-            Container.Resolve<IMyComponent>().Start();
+            Container.Resolve<IFoodSupplyManagement>().Start();
 
             ActivateFacade(_myFacade);
         }
@@ -59,14 +64,14 @@ namespace FoodShareMory.Module.ModuleController
             // Tear down facades
             DeactivateFacade(_myFacade);
 
-            Container.Resolve<IMyComponent>().Stop();
+            Container.Resolve<IFoodSupplyManagement>().Stop();
         }
 
         #endregion
 
         #region FacadeContainer
 
-        private readonly MyFacade _myFacade = new MyFacade();
+        private readonly FoodSupplyManagementFacade _myFacade = new FoodSupplyManagementFacade();
         IMyFacade IFacadeContainer<IMyFacade>.Facade => _myFacade;
 
         #endregion

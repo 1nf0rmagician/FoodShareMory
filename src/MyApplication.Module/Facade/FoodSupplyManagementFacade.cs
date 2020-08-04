@@ -5,9 +5,9 @@ using FoodShareMory.Module.Components;
 
 namespace FoodShareMory.Module.Facade
 {
-    public class MyFacade : IFacadeControl, IMyFacade
+    public class FoodSupplyManagementFacade : IFacadeControl, IMyFacade
     {
-        public IMyComponent Component { get; set; }
+        public IFoodSupplyManagement Component { get; set; }
 
         public void Activate()
         {
